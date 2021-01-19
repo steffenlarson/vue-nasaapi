@@ -1,15 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluid">
+    <h1>
+      NASA<img
+        alt="Vue logo"
+        src="./assets/logo.png"
+        style="height: 50px"
+      >ision
+    </h1>
+
+    <search-component />
+
+    <div class="row">
+      <!-- <image-component /> -->
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchComponent from './components/SearchComponent.vue'
 
 export default {
   name: 'App',
+  setup () {
+    return {}
+  },
+
   components: {
-    HelloWorld
+    SearchComponent
   }
 }
 </script>
